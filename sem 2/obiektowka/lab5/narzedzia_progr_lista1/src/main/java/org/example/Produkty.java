@@ -1,29 +1,29 @@
 package org.example;
 //przy użyciu klasy ObjectMapper z biblioteki Jackson moge deserializowac z pliku .json.
 
-public class Produkt {
+public class Produkty {
     private String kodProduktu;
     private double zamawianaIlosc;
     private String jednostkaMiary;
 
-    public Produkt() {} //Jackson wymaga pusty konstuktor......
+    public Produkty() {} //Jackson wymaga pusty konstuktor......
 
     public String getKodProduktu(){
         return kodProduktu;
     }
-    public void setKodProduktu(String kodWczytany) {
-        this.kodProduktu = kodWczytany;
+    public void setKodProduktu(String kodProduktu) {
+        this.kodProduktu = kodProduktu;
     }
     public double getZamawianaIlosc(){
         return zamawianaIlosc;
     }
-    public void setZamawianaIlosc(double ilosc) {
-        this.zamawianaIlosc = ilosc;
+    public void setZamawianaIlosc(double zamawianaIlosc) {
+        this.zamawianaIlosc = zamawianaIlosc;
     }
     public String getJednostkaMiary(){
         return jednostkaMiary;
     }
-    public void setJednostkaMiary(String jednostka) {
-        this.jednostkaMiary = jednostka;
+    public void setJednostkaMiary(String jednostkaMiary) {
+        this.jednostkaMiary = jednostkaMiary;
     }
 }

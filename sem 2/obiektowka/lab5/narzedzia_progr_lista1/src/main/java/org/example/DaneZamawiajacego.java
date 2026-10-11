@@ -25,14 +25,14 @@ public class DaneZamawiajacego {
     public String getEmail() {
         return email;
     }
-    public void setEmail(String adresEmail) {
-        this.email = adresEmail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getTelefon() {
         return telefon;
     }
-    public void setTelefon(String numerTelefonu) {
-        this.telefon = numerTelefonu;
+    public void setTelefon(String telefon) {
+        this.telefon = telefon;
     }
 }

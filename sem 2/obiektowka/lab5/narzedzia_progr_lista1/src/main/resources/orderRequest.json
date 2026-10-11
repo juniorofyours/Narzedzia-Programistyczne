@@ -1,20 +1,20 @@
 {
-  "dane zamawiającego": {
+  "daneZamawiajacego": {
     "imie": "Hanna",
-    "nazwisko": "Komórkowa",
+    "nazwisko": "Komorkowa",
     "email": "hannakomorkowa@czyjas.domena",
     "telefon": "09876543"
   },
-  "kolekcja produktów": [
+  "produkty": [
     {
-      "kod": "5638",
-      "ilosc": 200,
-      "jednostka miary": "g"
+      "kodProduktu": "5638",
+      "zamawianaIlosc": 200,
+      "jednostkaMiary": "g"
     },
     {
-      "kod": "1128",
-      "ilosc": 2,
-      "jednostka miary": "szt"
+      "kodProduktu": "1128",
+      "zamawianaIlosc": 2,
+      "jednostkaMiary": "szt"
     }
   ]
 }

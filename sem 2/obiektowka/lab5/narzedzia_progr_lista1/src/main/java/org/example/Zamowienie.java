@@ -2,27 +2,27 @@ package org.example;
 import java.util.List;
 
 public class Zamowienie {
-    private DaneZamawiajacego dane;
-    private List<Produkt> produkty;
+    private DaneZamawiajacego daneZamawiajacego;
+    private List<Produkty> produkty;
 
     public Zamowienie() {}
 
     public DaneZamawiajacego getDaneZamawiajacego() {
-        return dane;
+        return daneZamawiajacego;
     }
-    public void setDaneZamawiajacego(DaneZamawiajacego dane) {
-        this.dane = dane;
+    public void setDaneZamawiajacego(DaneZamawiajacego daneZamawiajacego) {
+        this.daneZamawiajacego = daneZamawiajacego;
     }
 
-    public List<Produkt> getProdukty() {
+    public List<Produkty> getProdukty() {
         return produkty;
     }
-    public void setProdukty(List<Produkt> produkty) {
+    public void setProdukty(List<Produkty> produkty) {
         this.produkty = produkty;
     }
 
     public int numerZamowieniaMetoda() {
-        if (dane == null) return 0;
+        if (daneZamawiajacego == null) return 0;
         int kod = getDaneZamawiajacego().getImie().length() + getDaneZamawiajacego().getNazwisko().charAt(0)*100+getDaneZamawiajacego().getEmail().length()*10;
         return kod;
     }
