@@ -7,12 +7,12 @@
   },
   "kolekcja produktów": [
     {
-      "kod": 5638,
+      "kod": "5638",
       "ilosc": 200,
       "jednostka miary": "g"
     },
     {
-      "kod": 1128,
+      "kod": "1128",
       "ilosc": 2,
       "jednostka miary": "szt"
     }
