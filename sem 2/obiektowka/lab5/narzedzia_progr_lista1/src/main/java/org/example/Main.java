@@ -39,7 +39,9 @@ public class Main {
                     System.out.println("Brak plików .json");
                 }
             }
-
+            else {
+                System.err.println("Dana ścieżka nie istnieje albo nie jest ktalogiem");
+            }
 
         } catch (ConfigurationException cex) {
             System.err.println("Błąd przy wczyttwaniu pliku konfiguracyjnego");
