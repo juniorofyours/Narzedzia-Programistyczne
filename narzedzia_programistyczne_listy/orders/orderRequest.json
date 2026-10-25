@@ -1,0 +1,20 @@
+{
+  "daneZamawiajacego": {
+    "imie": "Hanna",
+    "nazwisko": "Komorkowa",
+    "email": "hannakomorkowa@czyjas.domena",
+    "telefon": "09876543"
+  },
+  "produkty": [
+    {
+      "kodProduktu": "5638",
+      "zamawianaIlosc": 200,
+      "jednostkaMiary": "g"
+    },
+    {
+      "kodProduktu": "1128",
+      "zamawianaIlosc": 2,
+      "jednostkaMiary": "szt"
+    }
+  ]
+}

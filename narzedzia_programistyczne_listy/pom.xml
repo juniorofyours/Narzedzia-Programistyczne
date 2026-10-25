@@ -39,8 +39,8 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.6.0</version>
                 <configuration>
-                    <configLocation>google_checks.xml</configLocation> <!-- efekt uboczny: brak jakiejkolwiek informacji
-o ostrzeżeniach -->
+                    <configLocation>google_checks.xml</configLocation> <!-- efekt uboczny: brak jakiejkolwiek informacji o ostrzeżeniach -->
+                    <failOnViolation>false</failOnViolation> <!-- aby ostrzezenia nie blokowaly kompilacji -->
                 <consoleOutput>true</consoleOutput>
                 </configuration>
                 <executions>
@@ -65,6 +65,22 @@ o ostrzeżeniach -->
                         <phase>compile</phase> <!-- w praktyce etap site jest lepszy -->
                         <goals>
                             <goal>javadoc</goal> <!-- dokumentacja pojawi sie w target/reports/apidocs -->
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId> <!--automatyczne tworzenie dokumentacji projektowej -->
+                <version>3.1.12</version>
+                <configuration>
+                    <mainClass>org.example.Main</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>repackage</goal> <!-- przebudowuje na Fat JAR, czyli paczka, która ma w sobie wszystkie potrzebne biblioteki i da się uruchomić jedną komendą -->
                         </goals>
                     </execution>
                 </executions>

@@ -1,0 +1,8 @@
+#version: '3.8'
+
+services:
+  app-zamowienia:
+    build: .
+    volumes:
+      - ./orders:/app/orders
+  # szuka katalog dokladnie w tym samym miejscu, gdzie sam ten plik sie znajduje
