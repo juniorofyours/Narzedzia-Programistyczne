@@ -52,6 +52,23 @@ o ostrzeżeniach -->
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId> <!--automatyczne tworzenie dokumentacji projektowej -->
+                <version>3.12.0</version>
+                <configuration>
+                    <reportOutputDirectory>${project.build.directory}/reports</reportOutputDirectory> <!-- wskazanie folderu docelwoego -->
+                    <destDir>apidocs</destDir>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase> <!-- w praktyce etap site jest lepszy -->
+                        <goals>
+                            <goal>javadoc</goal> <!-- dokumentacja pojawi sie w target/reports/apidocs -->
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
